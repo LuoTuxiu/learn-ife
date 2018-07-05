@@ -1,0 +1,41 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.flex{
+	min-width: 1050px;
+}
+
+body{
+	margin: 20px;
+
+}
+
+
+.child2L {
+	width: 100px;
+	height: 200px;
+
+}
+
+.child2R {
+	width: 100px;
+	height: 200px;
+}
+
+.child3L{
+	width: 50px;
+	height: 100px;
+	margin: 10px;
+}
+
+body div{
+	margin: 20px;
+/*	flex: 0 1 auto;
+	order: 1;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border:1px solid blue;
+}

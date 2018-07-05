@@ -1,0 +1,702 @@
+/*common*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: white;
+}
+
+/*清除格式*/
+ul{
+        list-style: none;
+}
+
+
+/*nav*/
+.navDiv{
+	width: 100%;
+	background-color: #298abd;
+	height: 56px;
+}
+
+
+#navImg{
+	width: 34px;
+    height: 36px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+
+#navInput{
+    background-color: white;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 210px;
+    height: 28px;
+    border-radius: 15px;
+}
+
+#navInput img{
+	    vertical-align: middle;
+	    margin-left: 5px;
+}
+
+#navInput input{
+	border-width: 0px;
+    height: 28px;
+    width: 164px;
+}
+
+
+#login{
+	float: right;
+	    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#login button{
+	border-width: 0px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
+
+#login img{
+	    vertical-align: middle;
+}
+
+/*main*/
+
+#mainUl{
+	width: 100%;
+	overflow: auto;
+}
+
+.mainLi{
+	height: 1130px;
+}
+
+#urlTitleDiv p{
+	margin-left: 20px;
+}
+
+
+#leftLi{
+	width: 220px;
+	background-color: #2a2e3c;
+	float: left;
+}
+
+
+#leftIcon{
+	vertical-align: middle;
+    margin-right: 20px;
+}
+
+#rightLi{
+	background-color: #efefee;
+	margin-left: 220px;
+}
+/*leftMain*/
+#leftMain{
+	margin-left: 45px;
+    margin-top: 20px;
+}
+
+#leftMain label{
+	font-size: 17px;
+	color: white;
+}
+
+
+#countLeftLi{
+		float: left;
+		width: 48%;
+	 border-right-style: solid;
+	 border-width: 1px;
+	 border-color: #6e8094;
+}
+#countLeftLi p{
+	text-align: center;
+	color: #6e8094;
+}
+
+
+#countRightLi{
+	float: left;
+	width: 50%;
+}
+
+#countRightLi p{
+	text-align: center;
+	color: #6e8094;
+}
+
+
+#countUl{
+	margin-top: 20px;
+	 overflow: auto;
+}
+
+
+
+#leftLieBiaoUl{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+#leftLieBiaoUl button{
+	background-color: rgba(0,0,0,0);
+	border-width: 0px;
+	color: #6e8094;
+	font-size: 13px;
+}
+.leftLieBiaoLi{
+	padding-top: 10px;
+}
+
+#secondLevelUl{
+	margin-left: 10px;
+}
+
+#secondLevelUl li
+{
+	padding-top: 6px;
+}
+
+#thirdLevelUl{
+	margin-left: 10px;
+}
+
+
+.liebiaoImg{
+	margin-right: 10px;
+}
+
+/*rightMain*/
+#rightMain{
+    width: 890px;
+    margin: auto;
+}
+
+#urlTitleDiv{
+	background-color: white;
+	width: 100%;
+	height: 30px;
+}
+
+#urlTitleDiv p
+{
+	padding-top: 7px;
+}
+
+#rightBody{
+	background-color: #eeeeef;
+	overflow: auto;
+}
+
+#check{
+	background-color: white;
+	margin: 20px 0px;
+}
+
+#checkUl{
+	overflow: auto;
+
+}
+
+#checkUl select{
+	margin-left: 5px;
+
+}
+
+.checkDiv{
+	width: 170px;
+	overflow: auto;
+}
+
+#checkLeftDiv{
+	float: left;
+}
+
+#changeBtn{
+	float: left;
+	border-width: 0px;
+	margin-left: 5px;
+    background-color: white;
+}
+
+.checkDiv label{
+	color: #b7b7b7;
+	font-size: 13px;
+}
+
+#checkThirdDiv{
+	width: 246px;
+}
+
+.checkLi{
+	float: left;
+	padding: 8px;
+}
+
+.searchBtn{
+	background-color: #3c8bbf;
+    border-width: 0px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    margin-left: 105px;
+}
+
+#checkSearchBtn{
+	margin-top: 5px;
+}
+
+#selectedTime{
+	margin: 20px 0px;
+}
+#selectedTimeUl{
+	overflow: auto;
+}
+
+#selectedTimeUl li{
+	float: left;
+	padding-right: 5px;
+}
+
+#lastSelectedTimeLi{
+	padding-right: 0px ! important;
+}
+
+.timeBtn{
+	    height: 66px;
+    background-color: white;
+    border-width: 0px;
+    width: 34px;
+}
+
+#historySearchDiv{
+	    height: 66px;
+	    background-color: white;
+}
+#historySearchDiv img{
+	        vertical-align: middle;
+	            margin-left: 10px;
+}
+
+#historySearchDiv button{
+	      margin-top: 27px;
+	      border-width: 0px;
+	      background-color: white;
+	          margin-right: 16px;
+
+}
+
+.timeClockDiv{
+	height: 66px;
+	width: 111px;
+	background-color: white;
+
+}
+
+#firstTimeClockDiv{
+	border-top-color: #468ac7;
+	border-top-width: 2px;
+	border-top-style: solid;
+}
+
+.money{
+	color: orange;
+	font-size: 19px;
+
+}
+
+
+.moneyDanWei{
+	vertical-align: top;
+	    margin-left: 10px;
+	    color: #b3b3b3;
+}
+
+.timeClockDiv p{
+	 margin-bottom: 6px;
+    padding-top: 16px;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/*accountData*/
+#accountData{
+	margin: 20px 0px;
+}
+
+#accountDataUl{
+	overflow: auto;
+	margin-top: 5px;
+}
+#accountDataUl li{
+	float: left;
+}
+.tempColorDiv{
+	width: 60px;
+	height: 60px;
+	background-color: green;
+	float: right;
+	    margin: 10px;
+}
+
+.accountDataDiv{
+    width: 208px;
+    background-color: white;
+    overflow: auto;
+    margin-right: 16px;
+    border-left-width: 2px;
+    border-left-color: red;
+    border-left-style: solid;
+}
+
+#accountDataLastDiv{
+	margin-right: 0px;
+}
+
+
+.accountDataDiv label{
+	margin-top: 10px;
+    display: block;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.successCount{
+	color: #b7b7b7;
+}
+
+/*firstProject*/
+#project{
+	overflow: auto;
+}
+
+#projectLeft{
+	background-color: white;
+	width: 580px;
+	    padding-bottom: 10px;
+	    float: left;
+    margin-right:10px;
+}
+
+.topTtile{
+	background-color:#f3f5f6;
+	padding: 12px; 
+}
+
+#lastContentLeftTimeDiv select{
+	    margin: 4px 16px;
+}
+
+#backToToday{
+	    width: 90px;
+    height: 22px;
+}
+
+#projectLeftUl li{
+	float: left;
+	margin-right: 10px;
+}
+
+#firstTabDiv{
+    background-color: white !important;
+    border: 1px solid #e6e6e6;
+    border-bottom: 1px solid white;
+}
+
+#projectLeftUl
+{
+	overflow: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#projectLeftUl div{
+	background-color: #ececef;
+	    height: 38px;
+    text-align: center;
+    width: 80px;
+}
+
+#projectLeftUl button
+{
+	padding-top: 10px;
+	border-width: 0px;
+    background-color: rgba(0,0,0,0);
+}
+
+
+#projectLeftTableDiv{
+	margin-left: 10px;
+	    border-width: 1px;
+    border-color: #cbcbcb;
+    border-style: solid;
+    margin-right: 10px;
+        margin-top: -1px;
+}
+
+#projectLeftTableDiv table{
+	        margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    	    border-collapse: collapse;
+	    border:1px solid #cbcbcb;
+	        padding: 10px 28px;
+}
+
+#projectLeftTableDiv tr{
+	    border-collapse: collapse;
+	    border:1px solid #cbcbcb;
+	        padding: 10px 28px;
+}
+
+#projectLeftTableDiv td{
+	    border-collapse: collapse;
+	    border:1px solid #cbcbcb;
+	        padding: 10px 28px;
+}
+
+#projectRight{
+	width: 300px;
+	    float: left;
+	        float: left;
+	background-color: white;
+}
+
+#projectRightTitle{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #e7e7e7;
+}
+
+
+#projectRightTitle p:first-child{
+
+	color: #dcdcdc;
+	margin: 5px;
+}
+
+#projectRightTitle p:nth-child(2)
+{
+	color: #535353;
+		margin: 5px;
+}
+
+#secondContent{
+	overflow: auto;
+		border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #e7e7e7;
+}
+
+#projectRightPrice{
+	float: left;
+    border-right-style: solid;
+    border-right-color: #e7e7e7;
+    border-right-width: 1px;
+    margin: 5px;
+    width: 54px;
+}
+
+#projectRightPrice p:first-child{
+
+	color: #dcdcdc;
+	margin: 5px;
+}
+
+#projectRightPrice p:nth-child(2)
+{
+	color: #535353;
+		margin: 5px;
+}
+
+
+#projectRightPeople{
+	float: left;
+    margin: 5px;
+}
+#projectRightPeople p:first-child{
+
+	color: #dcdcdc;
+	margin: 5px;
+}
+
+#projectRightPeople p:nth-child(2)
+{
+	color: #535353;
+		margin: 5px;
+}
+
+#projectRightDescription{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #e7e7e7;
+}
+
+#projectRightDescription p{
+		color: #dcdcdc;
+	margin: 5px;
+}
+
+#projectRightDescription textarea{
+	margin: 5px;
+	    border-width: 0px;
+	width: 285px;
+    height: 137px;
+}
+
+#searchDiv{
+	    padding: 6px;
+
+}
+
+#protocalLabel{
+	    color: #dcdcdc;
+}
+
+#searchDiv input{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+
+#lastContent{
+	margin-top: 10px;
+	overflow: auto;
+}
+
+
+
+#lastContentLeft{
+	background-color: white;
+	float: left;
+	margin-right: 10px;
+}
+
+#dayLabelDiv{
+	    height: 36px;
+    border-top: 2px solid #b6d6ed;
+    border-bottom: 2px solid #e6e6e6;
+    overflow: auto;
+        width: 92%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+
+#dayLabelDiv label {
+    margin: 9px 19px;
+    float: left;
+}
+
+#dateTable p{
+	text-align: center;
+}
+
+
+#lastContentLeft table{
+	border-width: 0px;
+	padding: 10px;
+}
+
+#lastContentLeft tr{
+	border-width: 0px;
+	padding: 10px;
+}
+
+#lastContentLeft td{
+	border-width: 0px;
+	padding: 10px;
+}
+
+
+#lastContentRight{
+	background-color: white;
+	float: left;
+	width: 464px;
+	height: 402px;
+}
+
+#projectRightTable{
+	padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#projectRightTable tr{
+	padding: 10px;
+    border: 1px solid #e6e6e6;
+}
+
+#projectRightTable td{
+	padding: 10px;
+    border: 1px solid #e6e6e6;
+}
+
+#projectRightP{
+	background-color: #f3f5f6;
+    padding: 12px;
+}
+
+.firstTd{
+	width: 60px;
+}
+
+.secondTd{
+	width: 60px;
+}
+
+.thirdTd{
+	width: 200px;
+}
+
+.allBar{
+    width: 114px;
+    height: 5px;
+    background-color: #cbcccc;
+    float: right;
+    border-radius: 16px;
+    margin-top: 5px;
+}
+
+#daZhongBar{
+	width: 80%;
+	height: 100%;
+	background-color: red;
+	    border-radius: 16px;
+}
+
+#daZhong2Bar{
+		width: 80%;
+	height: 100%;
+	background-color: red;
+	    border-radius: 16px;
+}
+
+#daZhong3Bar{
+		width: 80%;
+	height: 100%;
+	background-color: red;
+	    border-radius: 16px;
+}
+
+#daZhong4Bar{
+		width: 80%;
+	height: 100%;
+	background-color: red;
+	    border-radius: 16px;
+}

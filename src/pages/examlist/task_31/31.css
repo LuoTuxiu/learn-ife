@@ -1,0 +1,57 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.titleDiv{
+	display: inline-block;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+body>div{
+	width: 404px;
+    margin: auto;
+}
+
+
+.contentDiv{
+	height: 30px;
+}
+
+.contentDiv>label{
+	width: 112px;
+    display: inline-block;
+    height: 100%;
+    text-align: right;
+}
+
+.contentDiv>input{
+	width: 284px;
+    height: 100%;
+}
+
+.selectDiv{
+		height: 30px;
+}
+
+
+.leftSelect{
+	float: left;
+    margin-left: 80px;
+    width: 120px;
+}
+
+.rightSelect{
+	float: right;
+    margin-right: 80px;
+    width: 120px;
+}
+
+.hidden{
+	display: none;
+}
+

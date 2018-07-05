@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    </style>
+</head>
+<body>
+<script>
+  function Observer(data, objKey, $parents) {
+    this.data = data
+    this.watchKey = objKey
+    this.$parents = $parents
+    this.walk(data)
+    this.eventsBus = new Event()
+  }
+  let p = Observer.prototype
+
+  p.walk = function(obj) {
+    let val
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        val = obj[key]
+        if (typeof val === 'object') {
+          new Observer(val, key, this)
+        }
+        this.convert(key, val)
+      }
+    }
+  }
+  p.convert = function(key, val) {
+    var self = this
+    Object.defineProperty(this.data, key, {
+      enumerable: true,
+      configurable: true,
+      get: function() {
+        console.log('你访问了' + key)
+        return val
+      },
+      set: function(newVal) {
+        console.log('你设置了' + key)
+        console.log('新的' + key + ' = ' + newVal)
+        if (newVal === val) {
+          return
+        }
+        if (typeof newVal === 'object') {
+          new Observer(newVal, key, self)
+        }
+        if (self.watchKey) {
+          self.$parents.eventsBus.emit(self.watchKey, val, newVal)
+        } else {
+          self.eventsBus.emit(key, val, newVal)
+        }
+        val = newVal
+      }
+    })
+    p.$watch = function(attr, callback){
+      this.eventsBus.on(attr, callback)
+    }
+  }
+  function Event() {
+    this.events = {}
+  }
+  Event.prototype.on = function(attr, callback) {
+    if (this.events[attr]) {
+      this.events[attr].push(callback)
+    } else {
+      this.events[attr] = [callback]
+    }
+  }
+  Event.prototype.off = function(attr) {
+    for (var key in this.events) {
+      if (this.events.hasOwnProperty(key) && key ===  attr) {
+        delete this.events[key]
+      }
+    }
+  }
+  Event.prototype.emit = function(attr, ...arg) {
+    this.events[attr] && this.events[attr].forEach(function(item) {
+      item(...arg)
+    })
+  }
+  let data = {
+    xingming: 'luo',
+    user: {
+      name: 'luotuxiu',
+      age: '20'
+    },
+    address: {
+      city: 'bejing',
+      province: {
+        path: 'south'
+      }
+    }
+  }
+  let app = new Observer(data)
+  app.$watch('xingming', function(oldVal, newVal) {
+    console.log('我的姓名变了， 旧姓名是' + oldVal + '新姓名是' + newVal)
+  })
+  app.$watch('user', function(oldVal, newVal) {
+    console.log('我的user变了， 旧user是' + oldVal + '新user是' + newVal)
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+body{
+	margin: 20px;
+	
+
+}
+
+.helpLabel {
+	color:red;
+}
+body table {
+	width: 80%;
+	margin: auto;
+}
+
+body tr{
+	height: 35px;
+}
+
+body input{
+	height: 30px;
+	width: 100%;
+}
+
+#confirm{
+	width: 200px;
+	margin: auto;
+    display: block;
+}
+
+td:nth-of-type(odd){
+	text-align: right;
+}
+
+
+td{
+	width: 40%;
+}

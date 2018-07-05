@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    </style>
+</head>
+<body>
+<script>
+  function Observer(data) {
+    this.data = data
+    this.walk(data)
+  }
+  let p = Observer.prototype
+
+  p.walk = function(obj) {
+    let val
+    for (var key in obj) {
+      // 这里为什么要用hasOwnProperty进行过滤呢？
+      // 因为for...in 循环会把对象原型链上的所有可枚举属性都循环出来
+      // 而我们想要的仅仅是这个对象本身拥有的属性，所以要这么做。
+      if (obj.hasOwnProperty(key)) {
+        val = obj[key]
+        if (typeof val === 'object') {
+          new Observer(val) // 如果是个对象，递归处理
+        }
+        this.convert(key, val)
+      }
+    }
+  }
+  p.convert = function(key, val) {
+    // The Object.defineProperty() method defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
+    Object.defineProperty(this.data, key, {
+      enumerable: true, // 是否能在for...in循环中遍历出来或在Object.keys中列举出来
+      configurable: true, // 总开关，一旦为false，就不能再设置他的（value，writable，configurable）
+      get: function() {
+        console.log('你访问了' + key)
+        return val
+      },
+      set: function(newVal) {
+        console.log('你设置了' + key)
+        console.log('新的' + key + ' = ' + newVal)
+        if (newVal === val) {
+          return
+        }
+        val = newVal // 用到了闭包
+      }
+    })
+  }
+  let data = {
+    user: {
+      name: 'luotuxiu',
+      age: '20'
+    },
+    address: {
+      city: 'bejing'
+    }
+  }
+  let app = new Observer(data)
+</script>
+</body>
+</html>
+//如果一开始是空对象，是有bug的

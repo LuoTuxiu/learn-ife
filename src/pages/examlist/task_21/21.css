@@ -1,0 +1,38 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+#textValue{
+	margin-top: 20px;
+}
+
+body li{
+	list-style-type:none;
+	margin: 5px;
+	padding: 10px;
+	color: white;
+}
+
+#confirm {
+	display: block;
+}
+
+#firstContent li{
+	background-color: blue;
+
+}
+
+
+#secondContent li{
+	background-color: blue;
+
+}
+
+#thirdContent li{
+	background-color: orange;
+
+}
+

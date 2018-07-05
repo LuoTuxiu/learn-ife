@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>32</title>
+     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="32.css" />
+  </head>
+<body>
+  <div class="bodyDiv">
+  <textarea rows="20" cols="50" class="textInput"></textarea>
+
+  <div class="content">
+    <form id="myform">
+      
+    </form>
+    <input type="button" name="submit" value="submit" id="submit">
+  </div>
+  </div>
+  <input type="button" name="add" value="add" id="add">
+  <select id="styleSelect">
+    <option>样式1</option>
+    <option>样式2</option>
+  </select>
+
+
+  <div>
+    <p>示例(将下面内容复制进文本框)：</p>
+    <p>
+       [
+    {
+      "label":"数字",
+      "type":"input",
+      "validator":{
+        "minlength":4
+      },
+      "rules":"必填，长度必须大于4个字符",
+      "success":"格式正确",
+      "fail":"名称长度不对"
+    },
+    {
+      "label":"密码",
+      "type":"input",
+      "validator":{
+        "minlength":6
+      },
+      "rules":"必填，长度必须大于6个字符",
+      "success":"格式正确",
+      "fail":"密码不能为空"
+    },
+    {
+      "label":"邮箱",
+      "type":"input",
+      "validator":{
+        "email":true
+      },
+      "rules":"必填，必须符合邮箱的格式",
+      "success":"格式正确",
+      "fail":"邮箱格式不正确"
+    },
+    {
+      "label":"手机号",
+      "type":"input",
+      "validator":{
+        "mobilephone":true
+      },
+      "rules":"请输入手机号",
+      "success":"格式正确",
+      "fail":"手机格式不正确"
+    },
+    {
+      "label":"官方网址",
+      "type":"input",
+      "validator":{
+        "url":true
+      },
+      "rules":"请输入网址",
+      "success":"格式正确",
+      "fail":"网址格式不正确"
+    }
+
+  ]
+    </p>
+  </div>
+  <script src="32.js"></script> 
+
+</body>
+</html>

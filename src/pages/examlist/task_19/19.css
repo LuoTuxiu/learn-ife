@@ -1,0 +1,14 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+#content{
+	margin-top: 100px;
+}
+
+#content li{
+	list-style-type:none;
+	margin-left: 5px;
+}

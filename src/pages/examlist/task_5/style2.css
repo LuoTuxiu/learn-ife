@@ -1,0 +1,224 @@
+/***************************
+This is a Cascading Style Sheet (CSS), which describes rules for styling HTML markup (and this is a comment, which you can delete).
+
+To use this file, link it to your markup by placing a <link> in the <head> of your HTML file:
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+
+replacing "style.css" with the name of this CSS file.
+
+Learn more about CSS at
+
+https://developer.mozilla.org/en-US/docs/Web/Guide/CSS
+***************************/
+/*common*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  background-color:darkgrey;
+}
+
+/*清除格式*/
+ul{
+  list-style: none;
+}
+
+p{
+  text-indent: 2em;
+  line-height: 25px;
+/*  padding: 2em;*/
+}
+
+.contentBody{
+  margin-right: 340px;
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  /*min-width: 300px;*/
+}
+
+.titleClass {
+  height: 54px;
+  background-color: #262626;
+  position: fixed;
+  top:0px;
+  width: 100%;
+}
+
+.secondFirstClass{
+  background-color:white;
+  padding: 30px;
+}
+
+.secondFirstClass img{
+  width: 100%;
+}
+
+.secondClass{
+  background-color: white;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.secondClass div{
+  padding: 20px;
+}
+
+.secondClass img{
+  width: 100%;
+}
+
+/*导航栏*/
+.lianjie{
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.lianjieSpan{
+}
+
+.nav{
+  float: right;
+  margin-right: 20px;
+}
+
+.titleClass img{
+  margin-left: 20px;
+}
+
+.nav li{
+  display: inline-block;
+  margin-left: 23px;
+  height: 54px;
+  line-height: 54px;
+}
+
+.nav li::before{
+  content: "•"
+}
+
+.pic p{
+  text-indent: 0px;
+  text-align: center;
+}
+
+.liebiao
+{
+  list-style-type: none;
+  padding: 20px;
+}
+
+.liebiao li{
+  padding: 10px;
+}
+
+.pic{
+  border: 1px solid gray;
+  width: 200px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.picsrc{
+  width: 180px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.secondClass ol{
+  margin-left: 55px;
+}
+
+.tableTitle{
+  background-color: darkslateblue;
+}
+
+.tableFooter{
+  background-color: gray;
+  font-weight: 900;
+}
+
+.table1{
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+/*右侧提交栏*/
+.left{
+  text-align: right;
+  padding: 10px;
+}
+
+.right{
+  text-align: left;
+}
+
+#commitBtn{
+  width: 80%;
+  height: 44px;
+  color: white;
+  background-color: mediumspringgreen;
+  display: block;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.commitComfirm{
+  margin-top: 0px;
+  padding-bottom: 20px;
+}
+
+.detail{
+  font-size: 13px;
+}
+
+.discription{
+  font-size: 12px;
+}
+
+.mainCommit{
+  background-color: white;
+  padding: 0px;
+  width: 300px;
+  float: right;
+  margin-right: 20px;
+}
+
+.mainCommit textarea{
+  resize: none;
+}
+
+#celanTitle{
+  margin-left: 22px;
+  margin-top: 10px;
+}
+
+.celanDiv{
+  background-color: gray;
+  width: 3px;
+  height: 30px;
+  float: left;
+    margin-top: -22px;
+    margin-left: 14px;
+}
+
+
+/*页底*/
+.lastP{
+  color: white;
+  text-align: center;
+  background-color: black;
+  margin: 0px;
+  position: absolute;
+  padding: 0px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}

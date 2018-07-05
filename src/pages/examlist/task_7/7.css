@@ -1,0 +1,667 @@
+/*common*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  min-width: 1280px;
+  background-color: white;
+}
+
+/*清除格式*/
+ul{
+        list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  border-width: 0px;
+
+}
+
+
+.Nav{
+  overflow: auto;
+  /*background-color: red;*/
+}
+
+.leftImg{
+  float: left;
+  padding: 20px;
+}
+
+.NavLeftTitle{
+    float: left;
+    /* vertical-align: super; */
+    padding: 40px 0px;
+}
+
+.NavUl{
+  float: right;
+  padding: 20px 20px 0 20px;;
+}
+
+.NavUl li{
+  float: left;
+  padding: 20px 0px 0px 20px;
+  width: 100px;
+  text-align: center;
+
+}
+
+.titleBorder{
+  width: 100px;
+  height: 5px;
+  background-color: #cc0000;
+  margin-top: 40px;
+}
+
+a:hover,a:active{
+  color: #cc0000;
+}
+
+
+.login{
+  float: right;
+}
+
+.loginP{
+  float: right;
+  margin-top: 20px;
+}
+
+.loginP:hover{
+    color: #cc0000;
+}
+
+#lastNavLi{
+  padding: 0px;
+}
+
+#lastNavLi a{
+      float: right;
+    padding: 20px 0px;
+}
+
+#lastNavLi img{
+  float: right;
+}
+
+
+
+/*first*/
+.first{
+  width: 100%;
+  min-width: 1280px;
+  height: 600px;
+  background-color: orange;
+}
+
+#firstDiv{
+  padding: 200px;
+}
+
+.first button{
+  background-color: #e55051;
+  color: white;
+  width: 333px;
+  height: 65px;
+  font-size: 26px;
+  /*清除按钮阴影*/
+  border-color:transparent!important;
+}
+
+#firstE{
+  font-size: 60px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#firstC{
+  font-size: 20px;
+  color: white;
+  width: 330px;
+  margin-bottom: 20px;
+}
+
+
+/*second*/
+.second{
+    margin: auto;
+    /* width: 100%; */
+        overflow: auto;
+}
+
+.second table{
+  width: 100%;
+}
+
+.secondBlockImg{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+
+.secondBlockBorder{
+  width: 2px;
+  height: 50px;
+  background-color: #aaa;
+}
+
+.secondBlock{
+  padding: 40px;
+}
+
+.secondBlockImg{
+      margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.secondBlock p{
+    text-align: center;
+    width: 200px;
+    margin-right: 40px;
+}
+
+
+.secondBlockBorder{
+  display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+
+/*third*/
+.third{
+    width: 100%;
+    height: 240px;
+        /*overflow: auto;*/
+    background-color: #edecec;
+        padding-top: 33px;
+}
+
+#thirdImg{
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+    margin-top: 33px;
+}
+
+
+#thirdTitle{
+  color: #a1a1a1;
+  font-size: 60px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/*four*/
+.four{
+    width: 100%;
+    height: 341px;
+  background-color: orange;
+      position: relative;
+}
+
+#fourFirst{
+  font-size: 28px;
+    text-align: center;
+      padding-top: 20px;
+    color: white;
+}
+
+#fourBorder{
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  margin: auto;
+    margin-top: 12px;
+}
+
+#fourFirstDescription{
+  font-size: 18px;
+      text-align: center;
+    margin-top: 14px;
+    color: white;
+}
+
+.fourInputUl{
+  width: 80%;
+  margin: auto;
+
+}
+
+
+.fourInputCommon{
+    width: 200px;
+    height: 27px;
+    border-width: 0px;
+}
+
+.fourInputTd{
+      vertical-align: top;
+      background-color: white;
+}
+
+.fourInputDiv{
+    width: 228px;
+    border-color: red;
+    border-width: 2px;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.fourInput{
+  position: absolute;
+    top: 175px;
+    left: 1.9%;
+    width: 100%;
+}
+
+
+.fourInputLi{
+  float: left;
+}
+
+.fourInputDiv button{
+    float: right;
+    width: 23px;
+    height: 27px;
+    background-color: white;
+    border-width: 0px;
+
+}
+
+.liebiao{
+  background-color: #e4e3e5;
+    width: 228px;
+}
+
+.liebiaoUl{
+    height: 160px;
+    overflow: auto;
+}
+
+.liebiaoUl li{
+  height: 28px;
+}
+
+#startSearch{
+  width: 228px;
+  height: 55px;
+  background-color: #e55051;
+  color: white;
+    font-size: 18px;
+    border-width: 0px;
+}
+
+
+/*five*/
+.five{
+  background-color: #f7f7f7
+}
+
+.five table{
+  margin: auto;
+  border-width: 0px;
+}
+
+.fiveTd{
+  padding: 80px 20px;
+}
+
+.fiveFirstTitle{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.fiveSecondTitle{
+  text-align: center;
+  margin-top: 10px;
+}
+
+#fiveSpecialTitle{
+  font-size: 20px;
+  text-align: center;
+
+}
+
+
+#fiveSpecialTitle2{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/*six*/
+.six{
+  height: 566px;
+    width: 100%;
+}
+
+.sixUl li{
+  float: left;
+}
+
+.sixRight{
+      margin-top: 100px;
+}
+
+.sixRight p{
+}
+
+.sixrightTitle{
+    margin-left: 34%;
+}
+
+#sixUlFirstLi{
+    width: 67%;
+    height: 566px;
+}
+
+#sixUlSecondLi{
+    width: 33%;
+    height: 566px;
+}
+
+#newWorld{
+    font-size: 33px;
+    display: inline;
+}
+
+#newWorldNum{
+    font-size: 33px;
+    color: red;
+    display: inline;
+}
+
+#newWorldContent{
+    width: 200px;
+    line-height: 32px;
+    text-align: center;
+    margin: auto;
+}
+
+#sixImg{
+      width: 100%;
+    height: 566px;
+}
+
+#moreDetail{
+    margin: auto;
+    display: block;
+    border-width: 2px;
+    border-color: #ea9396;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    color: #ea9396;
+
+}
+
+
+/*seven*/
+.sevenUl{
+ width: 100%;
+ height: 522px;
+}
+
+.sevenUl li{
+  float: left;
+  height: 100%;
+}
+
+.sevenFirst{
+  background-color: #e55051;
+  width: 33.3%;
+
+}
+
+.sevenFirst p{
+  color: white;
+    font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.sevenSecond{
+  background-color: white;
+    width: 33.3%;
+}
+
+.sevenFirstBorder{
+  width: 100px;
+    background-color: white;
+    height: 2px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.sevenFirstDiv button{
+       background-color: rgba(0,0,0,0.2);
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.sevenFirstDiv{
+      margin-top: 190px;
+}
+
+.sevenSecondDiv{
+  margin-top: 190px;
+}
+
+.sevenSecond p{
+  color: black;
+      font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.seventhird{
+  width: 33.4%;
+}
+.sevenSecondBorder{
+    width: 100px;
+    background-color: gray;
+    height: 2px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.sevenSecondDiv button{
+         background-color: rgba(0,0,0,0.2);
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+
+}
+
+/*eight*/
+.eightSecondBorder{
+      width: 100px;
+    background-color: #e55051;
+    height: 2px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+.eightSecondDiv{
+  padding: 100px;
+}
+  .eightSecondDivFirstP{
+        text-align: center;
+  }
+
+  .eightSecondDivSecondDiv{
+      text-align: center;
+          width: 500px;
+    margin: auto;
+        margin-top: 10px;
+
+  }
+
+  #seventhirdImg{
+        width: 100%;
+            height: 522px;
+  }
+
+
+/*night*/
+
+.nightLeft{
+  width: 340px;
+  margin-left: 140px;
+      overflow: auto;
+          height: 100%;
+}
+
+.nightTable{
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.nightRightDiv{
+  background-color: #ededee;
+   padding: 20px 8px 20px 20px;
+}
+
+.nightRightDiv input{
+  border-width: 0px;
+    background-color: #ededee;
+    width: 250px; 
+    height: 30px;
+}
+
+.nightFirstP{
+      line-height: 43px;
+}
+
+
+.nightSecondP{
+  line-height: 20px;
+      font-size: 12px;
+          color: #bcbbba;
+}
+
+.nightLeft button{
+      float: right;
+/*          border-width: 0px;
+      background-color: rgba(0,0,0,0.2);*/
+    background-color: rgba(0,0,0,0);
+    border-width: 0px;
+}
+
+.nightLeft img{
+  float: right;
+  margin-top: 7px;
+}
+
+.nightRightTd{
+      padding: 3px 8px;
+}
+
+.nightRightTd2{
+        padding: 3px 8px;
+}
+
+.nightRightDiv2{
+  background-color: #ededee;
+   padding: 20px 8px 20px 20px;
+}
+
+#nightRightDiv2Input{
+    border-width: 0px;
+    background-color: #ededee;
+    height: 60px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nightRightTd3{
+   padding: 3px 8px;
+}
+
+.nightRightTd3 button{
+       background-color: #ededee;
+      width: 100%;
+    height: 50px;
+}
+
+
+/*ten*/
+.ten{
+  background-color: #32363e;
+  padding: 100px 0px;
+}
+
+.ten p{
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+
+.ten input{
+          width: 302px;
+    height: 30px;
+    border-width: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.tenDiv button{
+      height: 40px;
+    width: 50px;
+    color: white;
+    background-color: #556168;
+    border-width: 0px;
+    margin-left: -4px;
+}
+
+.tenDiv{
+    width: 364px;
+    margin: auto;
+}
+
+.icon{
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/*last*/
+.last{
+  background-color: #2f3038;
+  height: 50px;
+}
+
+
+.last p{
+  color: white;
+  padding: 20px;
+}
+
+.last button{
+  float: right;
+    padding: 17px;
+       background-color: rgba(0,0,0,0.2);
+       border-width: 0px;
+         color: white;
+}

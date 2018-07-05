@@ -1,0 +1,44 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+body{
+	margin: 20px;
+
+}
+
+.flex{
+	    display: -webkit-inline-box;
+}
+
+/*.child2L {
+	width: 100px;
+	height: 200px;
+
+}
+
+.child2R {
+	width: 100px;
+	height: 200px;
+}
+
+.child3L{
+	width: 50px;
+	height: 100px;
+	margin: 10px;
+}*/
+
+body div{
+	box-sizing: border-box;
+	margin: 20px;
+	padding: 20px;
+/*	flex: 0 1 auto;
+	order: 1;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border:1px solid blue;
+	background-color: white;
+}

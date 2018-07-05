@@ -1,0 +1,27 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.content{
+    width:500px;
+    height: 262px;
+    display: inline-block;
+    padding: 20px;
+    float: left;
+}
+
+.textInput{
+    float: left;
+}
+
+.myInput{
+}
+
+.error{
+    color: red;
+}
+
+.bodyDiv{
+	overflow: auto;
+}

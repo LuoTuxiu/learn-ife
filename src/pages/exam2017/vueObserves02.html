@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    </style>
+</head>
+<body>
+<script>
+  function Observer(data) {
+    this.data = data
+    this.walk(data)
+    this.eventsBus = new Event() // 1.创建一个发布者
+  }
+  let p = Observer.prototype
+
+  p.walk = function(obj) {
+    let val
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        val = obj[key]
+        if (typeof val === 'object') {
+          new Observer(val)
+        }
+        this.convert(key, val)
+      }
+    }
+  }
+  p.convert = function(key, val) {
+    var self = this
+    Object.defineProperty(this.data, key, {
+      enumerable: true,
+      configurable: true,
+      get: function() {
+        console.log('你访问了' + key)
+        return val
+      },
+      set: function(newVal) {
+        console.log('你设置了' + key)
+        console.log('新的' + key + ' = ' + newVal)
+        if (newVal === val) {
+          return
+        }
+        if (typeof newVal === 'object') {
+          new Observer(newVal)
+        }
+        self.eventsBus.emit(key, val, newVal) // 发布消息
+        val = newVal
+      }
+    })
+    p.$watch = function(attr, callback){
+      this.eventsBus.on(attr, callback)
+    }
+  }
+  function Event() {
+    this.events = {}
+  }
+  Event.prototype.on = function(attr, callback) { // 2.给发布者添加一个缓存列表，用以存放回调函数，以便通知订阅者；
+    if (this.events[attr]) {
+      this.events[attr].push(callback)
+    } else {
+      this.events[attr] = [callback]
+    }
+  }
+  Event.prototype.off = function(attr) { // 移除
+    for (var key in this.events) {
+      if (this.events.hasOwnProperty(key) && key ===  attr) {
+        delete this.events[key]
+      }
+    }
+  }
+  Event.prototype.emit = function(attr, ...arg) { // 3.遍历缓存列表，依次触发存放的订阅者回调函数
+    this.events[attr] && this.events[attr].forEach(function(item) {
+      item(...arg)
+    })
+  }
+  let data = {
+    xingming: 'luo',
+    user: {
+      name: 'luotuxiu',
+      age: '20'
+    },
+    address: {
+      city: 'bejing'
+    }
+  }
+  let app = new Observer(data)
+  app.$watch('xingming', function(oldVal, newVal) {
+    console.log('我的姓名变了， 旧姓名是' + oldVal + '新姓名是' + newVal)
+  })
+</script>
+</body>
+</html>

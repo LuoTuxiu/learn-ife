@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+      <meta charset="UTF-8">
+      <title></title>
+      <style>
+      </style>
+  </head>
+  <body>
+    <div class="" id='app'>
+      <p>姓名: {{user.name}}</p>
+      <p>年龄: {{user.age}}</p>
+      <p>年龄: {{school}}</p>
+    </div>
+    <script src='./vue.js'>
+    </script>
+    <script>
+    let app = new Vue({
+      el: '#app',
+      data: {
+        user: {
+          name: 'luotuxiu',
+          age: 23678867
+        },
+        school: 'shenzhen',
+        major: 'computer'
+      }
+    })
+    </script>
+  </body>
+</html>
