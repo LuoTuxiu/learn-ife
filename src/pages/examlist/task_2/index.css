@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.task2 {
+  background: #d9d9d9;
+}
+.top {
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-between;
+  /* position: fixed;
+  width: 100%; */
+}
+.topLogo {
+  width: 100px;
+  height: 50px;
+  display: block;
+  padding: 0 20px;
+}
+.link {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.linkWrap {
+  display: flex;
+}
+.linkWrap li {
+  margin: 0 10px;
+}
+.linkWrap a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+.level1 {
+  margin: 20px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 2px #b1b1b1;
+}
+.secondArticle {
+  margin-left: 30px;
+}
+.secondArticle li {
+  list-style-type: none;
+}
+.pic > div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  width: 220px;
+}
+.pic img {
+  width: 200px;
+  margin-top: 10px;
+}
+.paiming {
+  margin-left: 30px;
+}
+.mytable {
+  border-collapse: collapse;
+  border-color: red;
+  width: 100%;
+}
+th {
+  background: #000;
+  color: #fff;
+  text-align: left;
+}
+.lastTr {
+  background: #c5c5c5;
+}
+.celan {
+  border-left: 2px solid #c5c5c5;
+  padding: 10px 15px;
+}
+td {
+  vertical-align: top;
+}
+.formLeft {
+  text-align: right;
+  padding-right: 10px;
+}
+.formRight {
+  text-align: left;
+}
+.formTable {
+  width: 100%;
+}
+.confirmBtn {
+  width: 100%;
+  background: #2c4cca;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.inputHelper {
+  font-size: 12px;
+  color: #969a9d;
+  margin-bottom: 10px;
+}
+.mutiText {
+  width: 100%;
+}
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
