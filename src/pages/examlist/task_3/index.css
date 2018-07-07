@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.box {
+  margin: 20px;
+  border: 1px solid #999;
+  background: #fff;
+  padding: 20px;
+}
+.wrap {
+  margin: 20px;
+  border: 1px solid #999;
+  background: #eee;
+  display: flex;
+  align-items: flex-start;
+}
+.left {
+  width: 200px;
+  display: flex;
+  box-sizing: border-box;
+}
+.name {
+  text-align: right;
+  flex: 1;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  background: #eee;
+}
+.right .logo {
+  margin: 20px;
+}
+.right {
+  padding: 0;
+}
+.content {
+  margin-left: 0;
+  margin-right: 0;
+  flex: 1;
+}
