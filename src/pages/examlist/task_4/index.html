@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style4.css">
-  </head>
-  
-  <body>
 
-        <div class="main">
-          
-          <div class="leftY"></div>
-          <div class="rightY"></div>
-        </div>
+<head>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
 
-  </body>
+    .root {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .wrap {
+      background: #ccc;
+      width: 400px;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .round {
+      background: #fc0;
+      border-radius: 50px;
+      width: 0;
+      border: 50px solid #fc0;
+      position: absolute;
+    }
+
+    .leftTop {
+      left: -12.5%;
+      top: -25%;
+    }
+
+    .rightBottom {
+      right: -12.5%;
+      bottom: -25%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="root">
+    <div class="wrap">
+      <div class="leftTop round"></div>
+      <div class="rightBottom round"></div>
+    </div>
+  </div>
+
+</body>
+
 </html>
