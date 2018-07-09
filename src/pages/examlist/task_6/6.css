@@ -1,56 +1,62 @@
 /*common*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-color: white;
 }
 
 /*清除格式*/
-ul{
+ul {
   list-style: none;
 }
 
-.wrap{
+.wrap {
   height: 100%;
   width: 892px;
   margin: 0 auto;
   padding: 0 44px;
 }
 
-.top{
+.top {
   height: 63px;
   border-bottom: 2px solid #ccc;
 }
 
-.first{
+.first {
   margin-top: 44px;
   overflow: auto;
 }
 
-.second{
+.second {
   width: 892px;
   margin-top: 44px;
   height: 200px;
 }
 
-.third{
+.third {
   width: 892px;
   height: 100%;
   margin: 44px 0;
-  overflow: auto;
+}
+
+.third:after {
+  content: '';
+  height: 0;
+  clear: both;
+  display: block;
 }
 
 /*top内元素*/
-.topLabel{
+.topLabel {
   width: 110px;
   height: 100%;
   background-color: #ca474a;
 }
 
-#website{
+#website {
   font-size: 12px;
   color: #fff;
   position: absolute;
@@ -58,7 +64,7 @@ ul{
   margin-top: 45px;
 }
 
-#time{
+#time {
   font-size: 12px;
   color: #d45d5c;
   position: absolute;
@@ -66,43 +72,42 @@ ul{
   margin-top: 45px;
 }
 
-.timeDiv{
+.timeDiv {
   height: 61px;
   float: right;
   margin-right: 45px;
 }
 
-
-.border{
+.border {
   width: 892px;
   height: 2px;
   background-color: #938e8c;
 }
 
 /*first*/
-.firstLeft{
+.firstLeft {
   width: 641px;
   height: 301px;
   background-color: red;
   float: left;
 }
 
-.firstRight{
+.firstRight {
   width: 213px;
-  height:301px;
+  height: 301px;
   overflow: hidden;
   float: right;
   border-top: 2px solid #cc8091;
 }
 
-#firstLeftDiv{
+#firstLeftDiv {
   width: 191px;
   height: 301px;
   background-color: black;
   float: left;
 }
 
-#firstRightDiv{
+#firstRightDiv {
   width: 191px;
   height: 301px;
   background-color: brown;
@@ -111,13 +116,13 @@ ul{
   float: right;
 }
 
-.firstBorder{
+.firstBorder {
   width: 203px;
   height: 2px;
   background-color: #cc8091;
 }
 
-.firstP{
+.firstP {
   font-size: 24px;
   color: #000;
   line-height: 70%;
@@ -126,15 +131,14 @@ ul{
   text-decoration: underline;
 }
 
-
-.secondP{
+.secondP {
   font-size: 12px;
   color: #676767;
   font-family: 楷体;
   margin-top: 10px;
-  }
+}
 
-.thirdP{
+.thirdP {
   font-size: 116px;
   color: #75b86b;
   font-family: 微软雅黑;
@@ -143,47 +147,45 @@ ul{
   line-height: 100%;
 }
 
-.fourthDiv{
+.fourthDiv {
   margin-top: 15px;
 }
 
-.fouthP{
+.fouthP {
   font-size: 55px;
   color: #cc8091;
   font-family: 微软雅黑;
   display: inline-block;
 }
-.fouthDiv{
+.fouthDiv {
   display: inline-block;
 }
 
-.fouthP1{
+.fouthP1 {
   font-size: 21px;
   color: #cc8091;
   font-family: 微软雅黑;
-
 }
 
-.fouthP2{
+.fouthP2 {
   font-size: 12px;
   color: #cc8091;
   font-family: 微软雅黑;
 }
 
 /*second*/
-.secondWhat{
+.secondWhat {
   width: 200px;
   display: inline-block;
-
 }
 
-.second div{
+.second div {
   vertical-align: top;
   margin-top: 20px;
   margin-right: 17px;
 }
 
-#what{
+#what {
   font-size: 16px;
   color: #418c59;
   font-family: 微软雅黑;
@@ -191,7 +193,7 @@ ul{
   text-decoration: underline;
 }
 
-#whatTxt{
+#whatTxt {
   margin-top: 20px;
   font-size: 12px;
   color: #767777;
@@ -199,12 +201,12 @@ ul{
   line-height: 16px;
 }
 
-.secondWhen{
+.secondWhen {
   width: 200px;
   display: inline-block;
 }
 
-#when{
+#when {
   font-size: 16px;
   color: #d2994f;
   font-family: 微软雅黑;
@@ -212,7 +214,7 @@ ul{
   text-decoration: underline;
 }
 
-#whenTxt{
+#whenTxt {
   margin-top: 20px;
   font-size: 12px;
   color: #767777;
@@ -220,13 +222,12 @@ ul{
   line-height: 16px;
 }
 
-
-.secondHow{
+.secondHow {
   width: 200px;
   display: inline-block;
 }
 
-#how{
+#how {
   font-size: 16px;
   color: #cc7680;
   font-family: 微软雅黑;
@@ -234,48 +235,48 @@ ul{
   text-decoration: underline;
 }
 
-#howTxt{
+#howTxt {
   margin-top: 20px;
-    font-size: 12px;
+  font-size: 12px;
   color: #767777;
   font-family: 宋体;
-    line-height: 16px;
+  line-height: 16px;
 }
 
 /*.HowWhatTxt{
   margin-top: 20px;
 }*/
 
-.whatLeft{
+.whatLeft {
   font-size: 12px;
   color: #231815;
   font-family: 微软雅黑;
   opacity: 70%;
 }
 
-.whatNum{
-      font-size: 12px;
+.whatNum {
+  font-size: 12px;
   color: #cd4a48;
   font-family: 微软雅黑;
-    font-style: oblique;
+  font-style: oblique;
   opacity: 70%;
 }
 
 /*third*/
 
-.thirdLeft{
+.thirdLeft {
   width: 48%;
   height: 100%;
   float: left;
 }
 
-.thirdRight{
+.thirdRight {
   width: 52%;
   height: 100%;
   float: right;
 }
 
-#theTitle{
+#theTitle {
   font-size: 42px;
   color: #11456b;
   font-family: 黑体;
@@ -284,7 +285,7 @@ ul{
   word-wrap: break-word;
 }
 
-#theTitle #documentTitle{
+#theTitle #documentTitle {
   font-size: 72px;
   color: #f5e327;
   font-family: 黑体;
@@ -292,14 +293,14 @@ ul{
   margin-right: 10px;
 }
 
-#theSecondTitle{
+#theSecondTitle {
   font-size: 33px;
   color: #11456b;
   font-family: 黑体;
   font-weight: bold;
 }
 
-.thirdBorder{
+.thirdBorder {
   height: 2px;
   width: 100%;
   background-color: #11456b;
@@ -307,47 +308,46 @@ ul{
   margin-top: 20px;
 }
 
-#qian{
+#qian {
   font-size: 70px;
   color: #f5e327;
   font-family: 微软雅黑;
   float: left;
 }
 
-#qianContent{
+#qianContent {
   font-size: 12px;
   color: #767777;
   font-family: 宋体;
   line-height: 16px;
 }
 
-#floatBorder{
+#floatBorder {
   float: right;
   width: 415px;
-
 }
 
-#qianImg{
+#qianImg {
   float: right;
   padding: 10px;
 }
 
-.thirdRightImg{
+.thirdRightImg {
   width: 458px;
   height: 275px;
 }
 
-.thirdRightBottom{
+.thirdRightBottom {
   margin-top: 20px;
   width: 458px;
   background-color: #eeedd7;
 }
 
-.thirdRightBottomList{
+.thirdRightBottomList {
   padding: 20px;
 }
 
-.sanjiao{
+.sanjiao {
   float: left;
   border: 10px solid red;
   border-left-color: transparent;
@@ -355,21 +355,21 @@ ul{
   border-top-color: transparent;
 }
 
-.sanjiaoTitle{
+.sanjiaoTitle {
   font-size: 16px;
   color: #5a5b5b;
   font-family: 宋体;
   line-height: 200%;
 }
 
-#num{
+#num {
   font-size: 110px;
   color: #fff;
   font-family: 微软雅黑;
   line-height: 110px;
 }
 
-.thirdRightBottomBorder{
+.thirdRightBottomBorder {
   width: 2px;
   height: 86px;
   background-color: white;
@@ -377,7 +377,7 @@ ul{
   margin: 0 20px;
 }
 
-#thirdRightBottomfirstTxt{
+#thirdRightBottomfirstTxt {
   font-size: 21px;
   color: white;
   font-family: 黑体;
@@ -385,36 +385,36 @@ ul{
   text-align: left;
 }
 
-#thirdRightBottomsecondTxt{
+#thirdRightBottomsecondTxt {
   font-size: 12px;
   color: white;
   font-family: 黑体;
   line-height: 12px;
 }
 
-.thirdRightBottomLeft{
+.thirdRightBottomLeft {
   float: left;
 }
 
-.thirdRightBottomfirst{
+.thirdRightBottomfirst {
   width: 162px;
   height: 86px;
   float: right;
 }
 
-.thirdRightBottomContent{
+.thirdRightBottomContent {
   display: flex;
 }
 
-.thirdRightBottomLeftContent{
+.thirdRightBottomLeftContent {
   text-align: center;
-  background-color: red;
+  background-color: #cf5252;
   display: flex;
   padding: 40px 10px;
   align-items: center;
 }
 
-.pFirst{
+.pFirst {
   font-size: 72px;
   color: #d45d5c;
   font-family: 黑体;
@@ -423,7 +423,7 @@ ul{
   margin-right: 10px;
 }
 
-.pLast{
+.pLast {
   font-size: 72px;
   color: #d45d5c;
   font-family: 黑体;
@@ -433,7 +433,7 @@ ul{
   width: 52px;
 }
 
-.pContent{
+.pContent {
   font-size: 16px;
   color: #5a5b5b;
   font-family: 黑体;
@@ -442,35 +442,35 @@ ul{
   float: right;
 }
 
-.thirdRightBottomRight{
+.thirdRightBottomRight {
   height: 200px;
   padding: 10px;
 }
 
-.thirdRightBottomRight div{
+.thirdRightBottomRight div {
   width: 200px;
   float: right;
 }
 
 /*bottom*/
-.borderBottom{
+.borderBottom {
   width: 892px;
   height: 1px;
   background-color: #938e8c;
   margin: 0px 44px;
 }
 
-.bottom{
+.bottom {
   overflow: auto;
   border-top: 1px solid #ccc;
 }
 
-.websiteBottom{
+.websiteBottom {
   height: 61px;
   float: right;
 }
 
-#web{
+#web {
   font-size: 12px;
   color: #d45d5c;
   font-family: 黑体;
