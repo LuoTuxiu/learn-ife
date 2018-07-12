@@ -1,702 +1,666 @@
 /*common*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
-
-body{
-  background-color: white;
+html,
+body,
+.wrap {
+  height: 100%;
+  background-color: #efefee;
 }
 
 /*清除格式*/
-ul{
-        list-style: none;
+ul {
+  list-style: none;
 }
-
 
 /*nav*/
-.navDiv{
-	width: 100%;
-	background-color: #298abd;
-	height: 56px;
+.navDiv {
+  width: 100%;
+  background-color: #298abd;
+  height: 56px;
 }
 
-
-#navImg{
-	width: 34px;
-    height: 36px;
-    margin-top: 10px;
-    margin-left: 20px;
-
+#navImg {
+  width: 34px;
+  height: 36px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
-
-#navInput{
-    background-color: white;
-    float: right;
-    margin-top: 15px;
-    margin-right: 20px;
-    width: 210px;
-    height: 28px;
-    border-radius: 15px;
+#navInput {
+  background-color: white;
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+  width: 210px;
+  height: 28px;
+  border-radius: 15px;
 }
 
-#navInput img{
-	    vertical-align: middle;
-	    margin-left: 5px;
+#navInput img {
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
-#navInput input{
-	border-width: 0px;
-    height: 28px;
-    width: 164px;
+#navInput input {
+  border-width: 0px;
+  height: 28px;
+  width: 164px;
 }
 
-
-#login{
-	float: right;
-	    margin-top: 20px;
-    margin-right: 20px;
+#login {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
-#login button{
-	border-width: 0px;
-    background-color: rgba(0,0,0,0);
-    color: white;
+#login button {
+  border-width: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
 }
 
-#login img{
-	    vertical-align: middle;
+#login img {
+  vertical-align: middle;
 }
 
 /*main*/
 
-#mainUl{
-	width: 100%;
-	overflow: auto;
+#mainUl {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #efefee;
 }
 
-.mainLi{
-	height: 1130px;
+#urlTitleDiv p {
+  margin-left: 20px;
 }
 
-#urlTitleDiv p{
-	margin-left: 20px;
+#leftLi {
+  width: 220px;
+  background-color: #2a2e3c;
+  /* float: left; */
+  position: absolute;
+  height: 100%;
 }
 
-
-#leftLi{
-	width: 220px;
-	background-color: #2a2e3c;
-	float: left;
+#rightLi {
+  margin-left: 220px;
 }
 
-
-#leftIcon{
-	vertical-align: middle;
-    margin-right: 20px;
+#leftIcon {
+  vertical-align: middle;
+  margin-right: 20px;
 }
 
-#rightLi{
-	background-color: #efefee;
-	margin-left: 220px;
-}
 /*leftMain*/
-#leftMain{
-	margin-left: 45px;
-    margin-top: 20px;
+#leftMain {
+  margin-left: 45px;
+  margin-top: 20px;
 }
 
-#leftMain label{
-	font-size: 17px;
-	color: white;
+#leftMain label {
+  font-size: 17px;
+  color: white;
+}
+#countLeftLi {
+  float: left;
+  width: 48%;
+  border-right-style: solid;
+  border-width: 1px;
+  border-color: #6e8094;
+}
+#countLeftLi p {
+  text-align: center;
+  color: #6e8094;
 }
 
-
-#countLeftLi{
-		float: left;
-		width: 48%;
-	 border-right-style: solid;
-	 border-width: 1px;
-	 border-color: #6e8094;
-}
-#countLeftLi p{
-	text-align: center;
-	color: #6e8094;
+#countRightLi {
+  float: left;
+  width: 50%;
 }
 
-
-#countRightLi{
-	float: left;
-	width: 50%;
+#countRightLi p {
+  text-align: center;
+  color: #6e8094;
 }
 
-#countRightLi p{
-	text-align: center;
-	color: #6e8094;
+#countUl {
+  margin-top: 20px;
+  overflow: auto;
 }
 
-
-#countUl{
-	margin-top: 20px;
-	 overflow: auto;
+#leftLieBiaoUl {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+#leftLieBiaoUl button {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0px;
+  color: #6e8094;
+  font-size: 13px;
+}
+.leftLieBiaoLi {
+  padding-top: 10px;
 }
 
-
-
-#leftLieBiaoUl{
-	margin-top: 20px;
-	margin-left: 50px;
-}
-#leftLieBiaoUl button{
-	background-color: rgba(0,0,0,0);
-	border-width: 0px;
-	color: #6e8094;
-	font-size: 13px;
-}
-.leftLieBiaoLi{
-	padding-top: 10px;
+#secondLevelUl {
+  margin-left: 10px;
 }
 
-#secondLevelUl{
-	margin-left: 10px;
+#secondLevelUl li {
+  padding-top: 6px;
 }
 
-#secondLevelUl li
-{
-	padding-top: 6px;
+#thirdLevelUl {
+  margin-left: 10px;
 }
 
-#thirdLevelUl{
-	margin-left: 10px;
+.liebiaoImg {
+  margin-right: 10px;
 }
 
-
-.liebiaoImg{
-	margin-right: 10px;
+#urlTitleDiv {
+  background-color: white;
+  width: 100%;
+  height: 30px;
 }
 
-/*rightMain*/
-#rightMain{
-    width: 890px;
-    margin: auto;
+#urlTitleDiv p {
+  padding-top: 7px;
 }
 
-#urlTitleDiv{
-	background-color: white;
-	width: 100%;
-	height: 30px;
+#rightBody {
+  background-color: #eeeeef;
+  overflow: auto;
 }
 
-#urlTitleDiv p
-{
-	padding-top: 7px;
+#check {
+  background-color: white;
+  margin: 20px 0px;
 }
 
-#rightBody{
-	background-color: #eeeeef;
-	overflow: auto;
+#checkUl {
+  overflow: auto;
 }
 
-#check{
-	background-color: white;
-	margin: 20px 0px;
+#checkUl select {
+  margin-left: 5px;
 }
 
-#checkUl{
-	overflow: auto;
-
+.checkDiv {
+  width: 170px;
+  overflow: auto;
 }
 
-#checkUl select{
-	margin-left: 5px;
-
+#checkLeftDiv {
+  float: left;
 }
 
-.checkDiv{
-	width: 170px;
-	overflow: auto;
+#changeBtn {
+  float: left;
+  border-width: 0px;
+  margin-left: 5px;
+  background-color: white;
 }
 
-#checkLeftDiv{
-	float: left;
+.checkDiv label {
+  color: #b7b7b7;
+  font-size: 13px;
 }
 
-#changeBtn{
-	float: left;
-	border-width: 0px;
-	margin-left: 5px;
-    background-color: white;
+#checkThirdDiv {
+  width: 246px;
 }
 
-.checkDiv label{
-	color: #b7b7b7;
-	font-size: 13px;
+.checkLi {
+  float: left;
+  padding: 8px;
 }
 
-#checkThirdDiv{
-	width: 246px;
+.searchBtn {
+  background-color: #3c8bbf;
+  border-width: 0px;
+  width: 60px;
+  height: 30px;
+  color: white;
+  margin-left: 105px;
 }
 
-.checkLi{
-	float: left;
-	padding: 8px;
+#checkSearchBtn {
+  margin-top: 5px;
 }
 
-.searchBtn{
-	background-color: #3c8bbf;
-    border-width: 0px;
-    width: 60px;
-    height: 30px;
-    color: white;
-    margin-left: 105px;
+#selectedTime {
+  margin: 20px 0px;
+}
+#selectedTimeUl {
+  overflow: auto;
 }
 
-#checkSearchBtn{
-	margin-top: 5px;
+#selectedTimeUl li {
+  float: left;
+  padding-right: 5px;
 }
 
-#selectedTime{
-	margin: 20px 0px;
-}
-#selectedTimeUl{
-	overflow: auto;
+#lastSelectedTimeLi {
+  padding-right: 0px !important;
 }
 
-#selectedTimeUl li{
-	float: left;
-	padding-right: 5px;
+.timeBtn {
+  height: 66px;
+  background-color: white;
+  border-width: 0px;
+  width: 34px;
 }
 
-#lastSelectedTimeLi{
-	padding-right: 0px ! important;
+#historySearchDiv {
+  height: 66px;
+  background-color: white;
+}
+#historySearchDiv img {
+  vertical-align: middle;
+  margin-left: 10px;
 }
 
-.timeBtn{
-	    height: 66px;
-    background-color: white;
-    border-width: 0px;
-    width: 34px;
+#historySearchDiv button {
+  margin-top: 27px;
+  border-width: 0px;
+  background-color: white;
+  margin-right: 16px;
 }
 
-#historySearchDiv{
-	    height: 66px;
-	    background-color: white;
-}
-#historySearchDiv img{
-	        vertical-align: middle;
-	            margin-left: 10px;
+.timeClockDiv {
+  height: 66px;
+  width: 111px;
+  background-color: white;
 }
 
-#historySearchDiv button{
-	      margin-top: 27px;
-	      border-width: 0px;
-	      background-color: white;
-	          margin-right: 16px;
-
+#firstTimeClockDiv {
+  border-top-color: #468ac7;
+  border-top-width: 2px;
+  border-top-style: solid;
 }
 
-.timeClockDiv{
-	height: 66px;
-	width: 111px;
-	background-color: white;
-
+.money {
+  color: orange;
+  font-size: 19px;
 }
 
-#firstTimeClockDiv{
-	border-top-color: #468ac7;
-	border-top-width: 2px;
-	border-top-style: solid;
+.moneyDanWei {
+  vertical-align: top;
+  margin-left: 10px;
+  color: #b3b3b3;
 }
 
-.money{
-	color: orange;
-	font-size: 19px;
-
+.timeClockDiv p {
+  margin-bottom: 6px;
+  padding-top: 16px;
+  font-size: 10px;
+  text-align: center;
 }
-
-
-.moneyDanWei{
-	vertical-align: top;
-	    margin-left: 10px;
-	    color: #b3b3b3;
-}
-
-.timeClockDiv p{
-	 margin-bottom: 6px;
-    padding-top: 16px;
-    font-size: 10px;
-    text-align: center;
-}
-
 
 /*accountData*/
-#accountData{
-	margin: 20px 0px;
+#accountData {
+  margin: 20px 0px;
 }
 
-#accountDataUl{
-	overflow: auto;
-	margin-top: 5px;
+#accountDataUl {
+  overflow: auto;
+  margin-top: 5px;
 }
-#accountDataUl li{
-	float: left;
+#accountDataUl li {
+  float: left;
 }
-.tempColorDiv{
-	width: 60px;
-	height: 60px;
-	background-color: green;
-	float: right;
-	    margin: 10px;
-}
-
-.accountDataDiv{
-    width: 208px;
-    background-color: white;
-    overflow: auto;
-    margin-right: 16px;
-    border-left-width: 2px;
-    border-left-color: red;
-    border-left-style: solid;
+.tempColorDiv {
+  width: 60px;
+  height: 60px;
+  background-color: green;
+  float: right;
+  margin: 10px;
 }
 
-#accountDataLastDiv{
-	margin-right: 0px;
+.accountDataDiv {
+  width: 208px;
+  background-color: white;
+  overflow: auto;
+  margin-right: 16px;
+  border-left-width: 2px;
+  border-left-color: red;
+  border-left-style: solid;
 }
 
-
-.accountDataDiv label{
-	margin-top: 10px;
-    display: block;
-    margin-left: 10px;
-    font-size: 12px;
+#accountDataLastDiv {
+  margin-right: 0px;
 }
 
-.successCount{
-	color: #b7b7b7;
+.accountDataDiv label {
+  margin-top: 10px;
+  display: block;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.successCount {
+  color: #b7b7b7;
 }
 
 /*firstProject*/
-#project{
-	overflow: auto;
+#project {
+  overflow: auto;
 }
 
-#projectLeft{
-	background-color: white;
-	width: 580px;
-	    padding-bottom: 10px;
-	    float: left;
-    margin-right:10px;
+#projectLeft {
+  background-color: white;
+  width: 580px;
+  padding-bottom: 10px;
+  float: left;
+  margin-right: 10px;
 }
 
-.topTtile{
-	background-color:#f3f5f6;
-	padding: 12px; 
+.topTtile {
+  background-color: #f3f5f6;
+  padding: 12px;
 }
 
-#lastContentLeftTimeDiv select{
-	    margin: 4px 16px;
+#lastContentLeftTimeDiv select {
+  margin: 4px 16px;
 }
 
-#backToToday{
-	    width: 90px;
-    height: 22px;
+#backToToday {
+  width: 90px;
+  height: 22px;
 }
 
-#projectLeftUl li{
-	float: left;
-	margin-right: 10px;
+#projectLeftUl li {
+  float: left;
+  margin-right: 10px;
 }
 
-#firstTabDiv{
-    background-color: white !important;
-    border: 1px solid #e6e6e6;
-    border-bottom: 1px solid white;
+#firstTabDiv {
+  background-color: white !important;
+  border: 1px solid #e6e6e6;
+  border-bottom: 1px solid white;
 }
 
-#projectLeftUl
-{
-	overflow: auto;
-	margin-top: 10px;
-	margin-left: 10px;
+#projectLeftUl {
+  overflow: auto;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-#projectLeftUl div{
-	background-color: #ececef;
-	    height: 38px;
-    text-align: center;
-    width: 80px;
+#projectLeftUl div {
+  background-color: #ececef;
+  height: 38px;
+  text-align: center;
+  width: 80px;
 }
 
-#projectLeftUl button
-{
-	padding-top: 10px;
-	border-width: 0px;
-    background-color: rgba(0,0,0,0);
+#projectLeftUl button {
+  padding-top: 10px;
+  border-width: 0px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-
-#projectLeftTableDiv{
-	margin-left: 10px;
-	    border-width: 1px;
-    border-color: #cbcbcb;
-    border-style: solid;
-    margin-right: 10px;
-        margin-top: -1px;
+#projectLeftTableDiv {
+  margin-left: 10px;
+  border-width: 1px;
+  border-color: #cbcbcb;
+  border-style: solid;
+  margin-right: 10px;
+  margin-top: -1px;
 }
 
-#projectLeftTableDiv table{
-	        margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+#projectLeftTableDiv table {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-    	    border-collapse: collapse;
-	    border:1px solid #cbcbcb;
-	        padding: 10px 28px;
+  border-collapse: collapse;
+  border: 1px solid #cbcbcb;
+  padding: 10px 28px;
 }
 
-#projectLeftTableDiv tr{
-	    border-collapse: collapse;
-	    border:1px solid #cbcbcb;
-	        padding: 10px 28px;
+#projectLeftTableDiv tr {
+  border-collapse: collapse;
+  border: 1px solid #cbcbcb;
+  padding: 10px 28px;
 }
 
-#projectLeftTableDiv td{
-	    border-collapse: collapse;
-	    border:1px solid #cbcbcb;
-	        padding: 10px 28px;
+#projectLeftTableDiv td {
+  border-collapse: collapse;
+  border: 1px solid #cbcbcb;
+  padding: 10px 28px;
 }
 
-#projectRight{
-	width: 300px;
-	    float: left;
-	        float: left;
-	background-color: white;
+#projectRight {
+  width: 300px;
+  float: left;
+  float: left;
+  background-color: white;
 }
 
-#projectRightTitle{
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #e7e7e7;
+#projectRightTitle {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e7e7e7;
 }
 
-
-#projectRightTitle p:first-child{
-
-	color: #dcdcdc;
-	margin: 5px;
+#projectRightTitle p:first-child {
+  color: #dcdcdc;
+  margin: 5px;
 }
 
-#projectRightTitle p:nth-child(2)
-{
-	color: #535353;
-		margin: 5px;
+#projectRightTitle p:nth-child(2) {
+  color: #535353;
+  margin: 5px;
 }
 
-#secondContent{
-	overflow: auto;
-		border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #e7e7e7;
+#secondContent {
+  overflow: auto;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e7e7e7;
 }
 
-#projectRightPrice{
-	float: left;
-    border-right-style: solid;
-    border-right-color: #e7e7e7;
-    border-right-width: 1px;
-    margin: 5px;
-    width: 54px;
+#projectRightPrice {
+  float: left;
+  border-right-style: solid;
+  border-right-color: #e7e7e7;
+  border-right-width: 1px;
+  margin: 5px;
+  width: 54px;
 }
 
-#projectRightPrice p:first-child{
-
-	color: #dcdcdc;
-	margin: 5px;
+#projectRightPrice p:first-child {
+  color: #dcdcdc;
+  margin: 5px;
 }
 
-#projectRightPrice p:nth-child(2)
-{
-	color: #535353;
-		margin: 5px;
+#projectRightPrice p:nth-child(2) {
+  color: #535353;
+  margin: 5px;
 }
 
-
-#projectRightPeople{
-	float: left;
-    margin: 5px;
+#projectRightPeople {
+  float: left;
+  margin: 5px;
 }
-#projectRightPeople p:first-child{
-
-	color: #dcdcdc;
-	margin: 5px;
+#projectRightPeople p:first-child {
+  color: #dcdcdc;
+  margin: 5px;
 }
 
-#projectRightPeople p:nth-child(2)
-{
-	color: #535353;
-		margin: 5px;
+#projectRightPeople p:nth-child(2) {
+  color: #535353;
+  margin: 5px;
 }
 
-#projectRightDescription{
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #e7e7e7;
+#projectRightDescription {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e7e7e7;
 }
 
-#projectRightDescription p{
-		color: #dcdcdc;
-	margin: 5px;
+#projectRightDescription p {
+  color: #dcdcdc;
+  margin: 5px;
 }
 
-#projectRightDescription textarea{
-	margin: 5px;
-	    border-width: 0px;
-	width: 285px;
-    height: 137px;
+#projectRightDescription textarea {
+  margin: 5px;
+  border-width: 0px;
+  width: 285px;
+  height: 137px;
 }
 
-#searchDiv{
-	    padding: 6px;
-
+#searchDiv {
+  padding: 6px;
 }
 
-#protocalLabel{
-	    color: #dcdcdc;
+#protocalLabel {
+  color: #dcdcdc;
 }
 
-#searchDiv input{
-	vertical-align: middle;
-	margin-right: 5px;
+#searchDiv input {
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
-
-#lastContent{
-	margin-top: 10px;
-	overflow: auto;
+#lastContent {
+  margin-top: 10px;
+  overflow: auto;
 }
 
-
-
-#lastContentLeft{
-	background-color: white;
-	float: left;
-	margin-right: 10px;
+#lastContentLeft {
+  background-color: white;
+  float: left;
+  margin-right: 10px;
 }
 
-#dayLabelDiv{
-	    height: 36px;
-    border-top: 2px solid #b6d6ed;
-    border-bottom: 2px solid #e6e6e6;
-    overflow: auto;
-        width: 92%;
-    margin: auto;
-    margin-top: 5px;
+#dayLabelDiv {
+  height: 36px;
+  border-top: 2px solid #b6d6ed;
+  border-bottom: 2px solid #e6e6e6;
+  overflow: auto;
+  width: 92%;
+  margin: auto;
+  margin-top: 5px;
 }
-
 
 #dayLabelDiv label {
-    margin: 9px 19px;
-    float: left;
+  margin: 9px 19px;
+  float: left;
 }
 
-#dateTable p{
-	text-align: center;
+#dateTable p {
+  text-align: center;
 }
 
-
-#lastContentLeft table{
-	border-width: 0px;
-	padding: 10px;
+#lastContentLeft table {
+  border-width: 0px;
+  padding: 10px;
 }
 
-#lastContentLeft tr{
-	border-width: 0px;
-	padding: 10px;
+#lastContentLeft tr {
+  border-width: 0px;
+  padding: 10px;
 }
 
-#lastContentLeft td{
-	border-width: 0px;
-	padding: 10px;
+#lastContentLeft td {
+  border-width: 0px;
+  padding: 10px;
 }
 
-
-#lastContentRight{
-	background-color: white;
-	float: left;
-	width: 464px;
-	height: 402px;
+#lastContentRight {
+  background-color: white;
+  float: left;
+  width: 464px;
+  height: 402px;
 }
 
-#projectRightTable{
-	padding: 10px;
-    border: 1px solid #e6e6e6;
-    border-collapse: collapse;
-    margin: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
+#projectRightTable {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-#projectRightTable tr{
-	padding: 10px;
-    border: 1px solid #e6e6e6;
+#projectRightTable tr {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
 }
 
-#projectRightTable td{
-	padding: 10px;
-    border: 1px solid #e6e6e6;
+#projectRightTable td {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
 }
 
-#projectRightP{
-	background-color: #f3f5f6;
-    padding: 12px;
+#projectRightP {
+  background-color: #f3f5f6;
+  padding: 12px;
 }
 
-.firstTd{
-	width: 60px;
+.firstTd {
+  width: 60px;
 }
 
-.secondTd{
-	width: 60px;
+.secondTd {
+  width: 60px;
 }
 
-.thirdTd{
-	width: 200px;
+.thirdTd {
+  width: 200px;
 }
 
-.allBar{
-    width: 114px;
-    height: 5px;
-    background-color: #cbcccc;
-    float: right;
-    border-radius: 16px;
-    margin-top: 5px;
+.allBar {
+  width: 114px;
+  height: 5px;
+  background-color: #cbcccc;
+  float: right;
+  border-radius: 16px;
+  margin-top: 5px;
 }
 
-#daZhongBar{
-	width: 80%;
-	height: 100%;
-	background-color: red;
-	    border-radius: 16px;
+#daZhongBar {
+  width: 80%;
+  height: 100%;
+  background-color: red;
+  border-radius: 16px;
 }
 
-#daZhong2Bar{
-		width: 80%;
-	height: 100%;
-	background-color: red;
-	    border-radius: 16px;
+#daZhong2Bar {
+  width: 80%;
+  height: 100%;
+  background-color: red;
+  border-radius: 16px;
 }
 
-#daZhong3Bar{
-		width: 80%;
-	height: 100%;
-	background-color: red;
-	    border-radius: 16px;
+#daZhong3Bar {
+  width: 80%;
+  height: 100%;
+  background-color: red;
+  border-radius: 16px;
 }
 
-#daZhong4Bar{
-		width: 80%;
-	height: 100%;
-	background-color: red;
-	    border-radius: 16px;
+#daZhong4Bar {
+  width: 80%;
+  height: 100%;
+  background-color: red;
+  border-radius: 16px;
+}
+
+.borderWrap {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#rightMain {
+  width: 904px;
+  margin: 0 auto;
 }
